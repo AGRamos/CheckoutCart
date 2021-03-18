@@ -6,11 +6,12 @@ RUN mkdir /usr/app
 RUN mkdir /usr/app/Models
 RUN mkdir /usr/app/Data
 RUN mkdir /usr/app/Tests
+RUN mkdir /usr/app/Tests/Unit
 WORKDIR /usr/app
 COPY Gemfile /usr/app/
 COPY Gemfile.lock /usr/app/
 COPY Models/Checkout.rb /usr/app/Models
-COPY Tests/CheckoutTest.rb /usr/app/Tests
+COPY Tests/Unit/CheckoutTest.rb /usr/app/Tests/Unit
 COPY Data/pricing_rules.json /usr/app/Data
 RUN bundle install
 COPY . /usr/app
