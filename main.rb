@@ -21,4 +21,5 @@ co = Checkout.new(pricing_rules)
 items.each do |item|
     co.scan(item)
 end
-puts co.total
+price = co.total
+puts "Basket: " + price['ItemCodes'] + "\nTotal price expected: £" + price['TotalPrice']
