@@ -13,7 +13,8 @@ class Checkout
     end
 
     def total()
-        @@checkout_item_codes = "Basket: "
+        @@total_price = 0
+        @@checkout_item_codes = ""
         @@total_strawberries = 0
         @@checkout_items.each_with_index do |item, i|
             @check_pricing_rules.each do |pricing_rule|
@@ -35,8 +36,9 @@ class Checkout
                @@total_price -= @@total_strawberries
         end
         if @@total_price == 0
-            return "Add a valid argument!"
+            return {"ItemCodes" => "", "TotalPrice" => "null"}
         end
-       return @@checkout_item_codes + "\nTotal price expected: £" + (String @@total_price.round(2))
+        @@checkout_items = []
+       return {"ItemCodes" => @@checkout_item_codes, "TotalPrice" => (String @@total_price.round(2))}
     end
 end

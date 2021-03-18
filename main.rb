@@ -21,4 +21,9 @@ co = Checkout.new(pricing_rules)
 items.each do |item|
     co.scan(item)
 end
-puts co.total
+price = co.total
+if (price['TotalPrice'] != "null")
+    puts "Basket: " + price['ItemCodes'] + "\nTotal price expected: £" + price['TotalPrice']
+else
+    puts "Add a valid argument!"
+end
