@@ -60,4 +60,5 @@ In the future, i would like to resume this project and add some features that al
 - Change from pure **Ruby** to **Ruby on Rails** to render views in decent ways and also the uses of facades wich are very useful.
 - Add a Database, it depends on the necesity of the app, but probably some files in XML or continuing on JSON instead of SQL.
 
+## The End
 And that's all folks! Thanks for taking your time in reading, or proving this, and i wait in time your answer!
