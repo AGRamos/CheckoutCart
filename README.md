@@ -34,15 +34,22 @@ In structure terms, i divided the app in 4 areas:
 
 To test data in this little project you have 2 ways to do it:
  1. **Using Docker**
-    1. Install ***docker** if you don't have it.
+    1. Install **docker** if you don't have it.
     2. Go to root path in the project, where you can find the **main.rb** file.
         1. Open a command line and type: 
             1. `docker build -t AlejandroGarridoApp .`
             2. `docker run AlejandroGarridoApp ` and then give it some arguments! like this => `docker run AlejandroGarridoApp GR1,GR1,SR1,CF1,SR1,SR1.SR1`, remember that when you pass arguments you must do it as the example **separated in commas and without spaces**.
 
 2. **Using ruby via command line**
-    1. Install ***ruby** if you don't have it.
+    1. Install **ruby** if you don't have it.
     2. Go to root path in the project, where you can find the **main.rb** file.
         1. Open a command line and type:
             1. `ruby main.rb "GR1,GR1,SR1,CF1,SR1,SR1.SR1"`as mentioned before, you must pass the arguments **separated in commas and without spaces**, in this option, i truly recommend capture the args in double quotes.
             2. If you want to try Unit tests, in the actual directory, you should use this command `ruby Tests/Unit/CheckoutTest.rb`
+
+
+The result when you test the app should be something like this:
+```
+Basket: GR1,SR1,GR1,GR1,CF1
+Total price expected: £22.45
+```
