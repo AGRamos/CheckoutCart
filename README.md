@@ -1,5 +1,3 @@
-## About your solution
-
 ## Introduction
 
 First of all, thank you for letting me make this Challenge, which i really enjoied a lot, it made me learn some Ruby, because previously i have never made any project with it. Also practice more on Docker that i was very rusty lately.
@@ -30,9 +28,9 @@ In structure terms, i divided the app in 4 areas:
 
 - **main.rb** => Here's where i attach all the classes and return a result.
 
-#### Test data
+## Test data
 
-To test data in this little project you have 2 ways to do it:
+There are 2 ways to test the data:
  1. **Using Docker**
     1. Install **docker** if you don't have it.
     2. Go to root path in the project, where you can find the **main.rb** file.
@@ -53,3 +51,13 @@ The result when you test the app should be something like this:
 Basket: GR1,SR1,GR1,GR1,CF1
 Total price expected: £22.45
 ```
+
+## Scalability
+
+In the future, i would like to resume this project and add some features that almost any should have. 
+- First of all, **ENV** variables making deployments in Pre easy, clients, etc.
+- **Dependencies injection**, making the app more robust and secure, and above all, scalable and easy understand.
+- Change from pure **Ruby** to **Ruby on Rails** to render views in decent ways and also the uses of facades wich are very useful.
+- Add a Database, it depends on the necesity of the app, but probably some files in XML or continuing on JSON instead of SQL.
+
+And that's all folks! Thanks for taking your time in reading, or proving this, and i wait in time your answer!
